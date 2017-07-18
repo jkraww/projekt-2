@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodersLab</title>
+  <link rel="stylesheet" href="main.scss" />
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- plansza menu poczatkowego -->
+  <div class="slide-start show" id="stageStart">
+    <div class="start-menu">
+        <a href="#slideGame" class="start-game button" id="startGame">Start</a>
+        <a href="#slideHighscore" class="show-highscore button" id="showHighscore">Pokaż wyniki</a>
+    </div>
+</div>
+
+  <!-- plansza z pobieraniem nazwy gracza -->
+  <div class="slide-player-name" id="stagePlayerName">
+      <div class="player-name-box">
+          <label for="playerName">Nazwa gracza:</label>
+          <input type="text" id="playerName" class="player-name" maxlength="10" />
+          <div class="player-name-error">Musisz wpisać nazwę gracza</div>
+          <button class="check-name button" id="checkName">Rozpocznij grę</button>
+      </div>
+  </div>
+ <br>
+  <!-- plansza z gra -->
+  <div class="slide-game" id="stageGame">
+    <div class="game-board" id="gameBoard"></div>
+    <div class="game-moves-box">
+        <strong>Liczba ruchów:</strong>
+        <div class="game-moves" id="gameMoves"></div>
+    </div>
+</div>
+<br />
+  <!-- tabela z wynikami -->
+  <div class="slide-highscore" id="stageHighscore">
+      <h3>Wyniki gry</h3>
+      <div class="highscore-board" id="highscoreBoard"></div>
+      <a href="" class="close-highscore button">Zamknij</a>
+  </div>
+
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
